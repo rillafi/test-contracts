@@ -114,7 +114,8 @@ export default async function deployContracts() {
           __dirname,
           `../deployedContracts/${hre.network.config.chainId}/${contractConfig.name}.json`
         )
-      )
+      ) &&
+      hre.network.config.chainId !== 31337
     ) {
       deployContracts.splice(deployContracts.indexOf(contractConfig), 1);
       deployedInfo[contractConfig.name] = JSON.parse(

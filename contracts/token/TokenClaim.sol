@@ -12,7 +12,8 @@ interface IDecimals {
 contract TokenClaim is Ownable {
     using SafeERC20 for IERC20;
 
-    mapping(address => uint256) tokensClaimed;
+    mapping(address => uint256) public taskClaimedTokens;
+    address[] public interacted;
 
     address token;
     uint256 amountPerClaim;
@@ -24,8 +25,13 @@ contract TokenClaim is Ownable {
     }
 
     function claimTokens() public {
-        require(tokensClaimed[msg.sender] == 0, "Already claimed tokens");
-        tokensClaimed[msg.sender] += amountPerClaim;
+        require(taskClaimedTokens[msg.sender] == 0, "Already claimed tokens");
+        taskClaimedTokens[msg.sender] += amountPerClaim;
         IERC20(token).safeTransferFrom(owner(), msg.sender, amountPerClaim);
+        interacted.push(msg.sender);
+    }
+
+    function getInteracted() public view returns (address[] memory) {
+        return interacted;
     }
 }

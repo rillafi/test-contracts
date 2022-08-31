@@ -157,4 +157,39 @@ describe("Testcase", async function () {
       Number(ethers.utils.formatEther(fbal1))
     );
   });
+
+  it("reads onchain interaction data", async function () {
+    let interacted = await contracts["TokenClaim"].getInteracted();
+    let taskClaimedTokens = await contracts["TokenClaim"].taskClaimedTokens(
+      user.address
+    );
+    expect(interacted[0]).to.be.equal(user.address);
+    expect(
+      Number(ethers.utils.formatEther(taskClaimedTokens))
+    ).to.be.greaterThan(0);
+    interacted = await contracts["DonationRouter"].getInteracted();
+    let donatedTokens = await contracts["DonationRouter"].donatedAmount(
+      user.address
+    );
+    let donatedRillaUSDC = await contracts[
+      "DonationRouter"
+    ].taskDonateRillaUSDC(user.address);
+    let donatedTRilla = await contracts["DonationRouter"].taskDonateTRilla(
+      user.address
+    );
+    expect(interacted[0]).to.be.equal(user.address);
+    expect(Number(ethers.utils.formatEther(donatedTokens))).to.be.greaterThan(
+      0
+    );
+    expect(donatedRillaUSDC).to.be.true;
+    expect(donatedTRilla).to.be.true;
+    donatedRillaUSDC = await contracts["DonationRouter"].taskDonateRillaUSDC(
+      deployer.address
+    );
+    donatedTRilla = await contracts["DonationRouter"].taskDonateTRilla(
+      deployer.address
+    );
+    expect(donatedRillaUSDC).to.be.false;
+    expect(donatedTRilla).to.be.false;
+  });
 });

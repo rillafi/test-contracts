@@ -15,6 +15,11 @@ contract DonationRouter is Ownable {
     IERC20 public acceptedToken;
     uint256 public constant FEEDIVISOR = 10**18;
 
+    mapping(address => uint256) public donatedAmount;
+    mapping(address => bool) public taskDonateRillaUSDC;
+    mapping(address => bool) public taskDonateTRilla;
+    address[] public interacted;
+
     event Donate(address from, uint256 amount);
 
     constructor(
@@ -40,6 +45,7 @@ contract DonationRouter is Ownable {
         );
         uint256 amount = acceptedToken.balanceOf(address(this));
         acceptedToken.safeTransfer(charityAddress, amount);
+        donatedAmount[msg.sender] += amount;
         emit Donate(msg.sender, amount);
     }
 
@@ -49,8 +55,13 @@ contract DonationRouter is Ownable {
     /// @dev if donating with native asset (ETH) set sellToken to WETH's address, msg.value to desired Eth donation
     /// @dev if donating with acceptedToken then it's fine to send empty bytes to swapCallData ("0x")
     function donate(IERC20 sellToken, uint256 sellAmount) public {
+        if (!taskDonateRillaUSDC[msg.sender] && !taskDonateTRilla[msg.sender]) {
+            interacted.push(msg.sender);
+        }
         if (sellToken == acceptedToken) {
             sellToken.safeTransferFrom(msg.sender, address(this), sellAmount);
+            // assign task completion
+            taskDonateRillaUSDC[msg.sender] = true;
             _donateAndChargeFees();
             return;
         }
@@ -60,6 +71,8 @@ contract DonationRouter is Ownable {
         }
         // execute swap
         swapper.swap(msg.sender, sellAmount);
+        // assign task completion
+        taskDonateTRilla[msg.sender] = true;
         // charge fees
         _donateAndChargeFees();
     }
@@ -67,5 +80,9 @@ contract DonationRouter is Ownable {
     /// @notice Setter for fee variable
     function setFee(uint256 _fee) external onlyOwner {
         fee = _fee;
+    }
+
+    function getInteracted() public view returns (address[] memory) {
+        return interacted;
     }
 }
