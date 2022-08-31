@@ -1,10 +1,6 @@
 import { DeployedInfo } from "./helpers/helpers";
 import { Contract } from "ethers";
-// We require the Hardhat Runtime Environment explicitly here. This is optional
-// but useful for running the script in a standalone fashion through `node <script>`.
-//
-// When running the script with `npx hardhat run <script>` you'll find the Hardhat
-// Runtime Environment's members available in the global scope.
+import { saveDeployedInfo } from "./helpers/helpers";
 import hre, { ethers } from "hardhat";
 import fs from "fs";
 import path from "path";
@@ -59,11 +55,21 @@ async function deployAllContracts(
 ) {
   for (const contractInfo of deployContracts) {
     const args = getArgs(contractInfo.args, deployedConfig);
-    const deployedInfo = await ethers
-      .getContractFactory(contractInfo.name)
-      .then((Contract) => Contract.deploy(...args))
-      .then((contract) => getDeployedInfo(contract, contractInfo.name, args));
+    const Contract = await ethers.getContractFactory(contractInfo.name);
+    const gasLimit = (
+      await ethers.provider.estimateGas(Contract.getDeployTransaction(...args))
+    )
+      .mul(12)
+      .div(10);
+    const gasPrice = (await ethers.provider.getGasPrice()).mul(12).div(10);
+    const contract = await Contract.deploy(...args, { gasLimit, gasPrice });
+    const deployedInfo = await getDeployedInfo(
+      contract,
+      contractInfo.name,
+      args
+    );
     deployedConfig[contractInfo.name] = deployedInfo;
+    saveDeployedInfo(deployedInfo);
   }
   return deployedConfig;
 }
@@ -73,8 +79,6 @@ export default async function deployContracts() {
   const accounts = await Promise.all(
     signers.map((signer) => signer.getAddress())
   );
-  console.log(accounts[0]);
-  const deployedConfig: DeployedInfoConfig = {};
   const deployContracts: { name: string; args: any[] }[] = [
     { name: "rillaUSDC", args: [] },
     { name: "tRILLA", args: [] },
@@ -95,7 +99,15 @@ export default async function deployContracts() {
     },
     { name: "TokenClaim", args: ["tRILLA.address", "1000"] },
   ];
-  for (const contractConfig of deployContracts) {
+
+  let deployedInfo: DeployedInfoConfig = {};
+  if (!hre.network.config.chainId) {
+    console.log(
+      "please set chainId in hardhat.config.ts for the network you are attempting to use"
+    );
+    process.exit(1);
+  }
+  for (const contractConfig of [...deployContracts]) {
     if (
       fs.existsSync(
         path.join(
@@ -104,13 +116,19 @@ export default async function deployContracts() {
         )
       )
     ) {
-      deployContracts.splice(deployContracts.indexOf(contractConfig));
+      deployContracts.splice(deployContracts.indexOf(contractConfig), 1);
+      deployedInfo[contractConfig.name] = JSON.parse(
+        fs
+          .readFileSync(
+            path.join(
+              __dirname,
+              `../deployedContracts/${hre.network.config.chainId}/${contractConfig.name}.json`
+            )
+          )
+          .toString()
+      );
     }
   }
-  // const deployedInfo: DeployedInfoConfig = {};
-  const deployedInfo = await deployAllContracts(
-    deployContracts,
-    deployedConfig
-  );
+  deployedInfo = await deployAllContracts(deployContracts, deployedInfo);
   return deployedInfo;
 }

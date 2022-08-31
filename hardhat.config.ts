@@ -52,7 +52,19 @@ export default {
       },
     },
     goerli: {
+      chainId: 5,
       url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_KEY_GOERLI}`,
+      accounts: {
+        mnemonic: process.env.MNEMONIC,
+        path: "m/44'/60'/0'/0",
+        initialIndex: 0,
+        count: 20,
+        passphrase: "",
+      },
+    },
+    rinkeby: {
+      chainId: 4,
+      url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.ALCHEMY_KEY_RINKEBY}`,
       accounts: {
         mnemonic: process.env.MNEMONIC,
         path: "m/44'/60'/0'/0",
@@ -64,8 +76,19 @@ export default {
   },
   etherscan: {
     apiKey: {
-      goerli: "GS67RJI5VR8XPRSRA63HCRNSKPXR2PEG9M",
-      optimisticEthereum: "HN6JR2WJF6TFI6X8IK4TUBIB3J254VBWTU",
+      goerli: process.env.ETHERSCAN_GOERLI,
+      optimisticEthereum: process.env.ETHERSCAN_OPTIMISM,
+      rinkeby: process.env.ETHERSCAN_GOERLI,
     },
+    // customChains: [
+    //   {
+    //     network: "goerli",
+    //     chainId: 5,
+    //     urls: {
+    //       apiUrl: "https://api-goerli.etherscan.io/api",
+    //       browserUrl: "https://goerli.etherscan.io",
+    //     },
+    //   },
+    // ],
   },
 };

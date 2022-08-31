@@ -21,9 +21,10 @@ function getAllFiles(dirPath: string, arrayOfFiles: string[]) {
 async function verifyEtherscanAndSave(
   allContracts: string[],
   deployedInfo: DeployedInfo,
-  contractName: string,
-  constructorArguments: any[]
+  contractName: string
 ) {
+  const constructorArguments = deployedInfo.constructorArguments;
+  console.log(constructorArguments);
   const match = allContracts.find((element) => {
     if (element.includes(`${contractName}.sol`)) {
       return true;
@@ -38,7 +39,7 @@ async function verifyEtherscanAndSave(
       )}:${contractName}`,
     });
     deployedInfo.verified = true;
-    saveDeployedInfo(deployedInfo, contractName);
+    saveDeployedInfo(deployedInfo);
   } catch (e: any) {
     if (e._isHardhatPluginError && e._isNomicLabsHardhatPluginError) {
       const chain = deployedInfo.network.chainId;
@@ -46,7 +47,7 @@ async function verifyEtherscanAndSave(
         "There was an error from Hardhat, the contract is likely already verified. Check manually and then manually change verified to true at " +
           path.join(
             __dirname,
-            `../deployed_contracts/${chain}/${contractName}.json`
+            `../deployedContracts/${chain}/${contractName}.json`
           )
       );
       console.dir(e);
@@ -58,12 +59,12 @@ async function verifyEtherscanAndSave(
 }
 
 async function main() {
-  const chains = fs.readdirSync(path.join(__dirname, "../deployed_contracts"));
+  const chains = fs.readdirSync(path.join(__dirname, "../deployedContracts"));
   const allContracts = getAllFiles(path.join(__dirname, "../contracts"), []);
   for (const chain of chains) {
     if (chain === "31337") continue;
     const contracts = fs.readdirSync(
-      path.join(__dirname, `../deployed_contracts/${chain}`)
+      path.join(__dirname, `../deployedContracts/${chain}`)
     );
     for (const contract of contracts) {
       const contractName = contract.replace(".json", "");
@@ -72,7 +73,7 @@ async function main() {
           .readFileSync(
             path.join(
               __dirname,
-              `../deployed_contracts/${chain}/${contractName}.json`
+              `../deployedContracts/${chain}/${contractName}.json`
             )
           )
           .toString()
@@ -81,12 +82,7 @@ async function main() {
         if (hre.network.name !== deployedInfo.network.name)
           hre.changeNetwork(deployedInfo.network.name);
         console.log(deployedInfo.address);
-        await verifyEtherscanAndSave(
-          allContracts,
-          deployedInfo,
-          contractName,
-          deployedInfo.constructorArguments
-        );
+        await verifyEtherscanAndSave(allContracts, deployedInfo, contractName);
       }
     }
   }
