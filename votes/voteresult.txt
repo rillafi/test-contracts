@@ -1,2 +1,3 @@
+Description: Do you wish to keep the current business and technical development team in leadership for the next calendar year? Salaries will be set at $150000 USD or equivalent digital assets for leadership board contingent upon staff\s completion and success rate of RillaFi activities. \n\nScope: The team will include a leadership board: Rajesh Saggi Executive Chairmain Ben Knaus CEO Aaron Knudtson CTO and Theodore Zipoy COO as well as a lead UI/UX developer. The leadership team may propose additional headcount as the RillaFi protocol scales.\n\nThis vote will occur yearly with this proposal serving as the genesis vote. 
 Votes yes: 131000 (98.49624060150376%) 
- Votes no: 2000 (1.5037593984962405%)
+Votes no: 2000 (1.5037593984962405%)
