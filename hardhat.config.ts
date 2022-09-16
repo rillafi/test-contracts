@@ -41,7 +41,7 @@ export default {
     hardhat: {
       chainId: 31337,
       forking: {
-        url: `https://opt-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_KEY_OPTIMISM}`,
+        url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_KEY_GOERLI}`, //goerli fork
       },
       accounts: {
         mnemonic: process.env.MNEMONIC,
