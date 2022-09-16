@@ -1,0 +1,667 @@
+[
+  {
+    "voter": "0x0000015D1A32a7a10E90FdDb4bA13cF905646333",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x0000049507924Ce153034BE957e54d0D5CDefca4",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x0054433B1Cb65a490737423518c789e020D7916e",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x00F09e8589B6D30c475b6230f627e279CF4EB018",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x01082fE0EfF957B4BC9Ca8CAbA1b25882abea724",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x02318a202Ab51c067C82B8717e68a613203C3f9e",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x047a08e74B79FA1BBDA020475422AE86c885e059",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x05221699D33F94f9C3A07647AD607442d1083044",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x0ba613BDC50146632361f949E4417ED2D6a468c8",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x0C162242955f136e0b5f7F0e4a9719ad12c60553",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x0Df83462584c0E211Fd6adFbdF59a2b9699077Ef",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x0E9A32828f7CFD54f0D18cb1DDdC52beeadCA6f0",
+    "vote": 2,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x114c87381eE8731B0Dc52F8Da6f3d5EDAA8434D6",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x12A156187f26f873348eef64a01FFD36b8D4751A",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x1D35F32431C08c4dfE4df95fa439991f72B0A08e",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x1e8D17232002FFbBA77d988C111364AD7326e3ab",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x20799B34E4382AD646bc873C7d96D02aC2F9c202",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x23B5f526Ffe0079233A1Def0B53dd928C88143B8",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x268783Bb4576E31cAE46799F1C10905b160ADFE9",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x291d8A529F05600851Bfb08Ce4494d464Cb8D587",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x295bc2EF7aA8346C57a86dA8f99FC7e73f1809F6",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x2EF228BAc8101D671074F40239951bC91807A189",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x2f47E0e52806518B6dCc14687Ecac6824CdBaA01",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x330e521543cFdB27d75F1A0c336b665880439aAE",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x3322BE645Cb27246e57A274C98474337d091CFBc",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x35Ee4dbABb822232A1Cf0506617EC2125fa00A1e",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x363D4C1826f04e01B6329cEF013c9c84633339E0",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x3795490175E747B023c591783BD9A3d7600de6CB",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x37f4777c5b9eE6d3fB9862B2fB79738F05c3cd50",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x3f6a3f6c567e54A2384bD8a986751d49453B7C65",
+    "vote": 2,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x3fe6Ce328a04BA5c5fE8E95D556D1a7135B67840",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x43f44d7AF66752Fa95442E619Aeb11DA4829278a",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x45d876D707Af8B7AE4DdA40C86Ca5b8E9cE50616",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x47979DAbFb4f423519C43cc51215976A003AF90E",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x47E01CB834D329ed9C4445526CFB393031891F03",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x4984fc8002E73d69490915B283De9bb391773500",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x49e3560B295A61B4d1C2a86d1EA2aA2bf5d73613",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x4db472a074D10Eef2C31ee2C1f835eEe05EA4cFe",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x4dF301Aa6A5B06Ae8B25e197d94722edC5f8baaA",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x4e987D3cF57bA4950C49304576286f258AC0c863",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x4FCF5e1bb7836937509ce5B182d47884c5a88359",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x5098a31d8b422Cfaa395e4d4eBe1236A0FD876c6",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x529ae4729BD7B5714fC53D1Fb7AA6E05FE87ec39",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x56b54608ad146bd0562f925C6e34d21ff72Ca944",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x5b0b89a2C12c8b7B52b528c3894f571E5d57Cb1A",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x5B68Ff12be7Fd90284ebE2702050879D4d50061A",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x5B97f5D8E5d11C89a3CD412DF2803910037F14BF",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x5B993CAd70b3Cd0856Ef71cAE270eec88A51FFA4",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x5c3407ca1ed4cE8E5d2c566e38d6f05027E2f984",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x5CB8bbf25D5D1d71f59c3EfF4bF3c6Ea53Ad2D31",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x6448637A81e3a4F04C851D41A7704F9a6fD30A6b",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x6556898b2c5B395f7daF0B5BC949d34f8Ff34497",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x660b3a2554187d740d35f29B3Ad4Ea82cD0f5783",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x66557Cb5B08F4F1E260EFf472c051DAf6dA21A80",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x66F58EFe389A31E6751837D066C28d27abc08B42",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x682CA5c2bEA991e27a840A4B2B7cADA4e69c4C5c",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x6e9fA93Ed19425E6513C9b9533D2eF1257f3E777",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x701Af0385514202dd740Dda465C2Db07E4B3c36A",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x70E3460e097334E1439A62c7ebD55A8faCa5b23a",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x766992AC68Bb0BEEDD0A0380015086849F7C276B",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x7C40C714086e9cdcde96C4FAeEe91bC734f7C2cA",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x7c9d0Dbfd1A94716e773C91b156Fa82C25ebC237",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x7FE9AB2718909344a6b4b5928CD69a458e646c2F",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x840dF4421683A326b76b78299af1000FA6491D99",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x84c9Acea0B5bC7F1b7327d5Fc4EDF70Ea3Bd0d8B",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x89496eAba84524145884a26cf526Bf420BB672B4",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x8d144a1889cC6b25B44122C47f87c64084Cb5D56",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x8ee4F19e9C05679A51aE307Ba8D1d4dd70D85ab3",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x8EfBa8E4a447c9580F1A66a3D1F33e98F18E1247",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x8f59Ace224D79277c719605fAE717b995dfc8701",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x92625c44eF7ac5908145bb5A71F276512e1504CE",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x926F069A76c863dE736002Aa3B485686269BE5f2",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x92C370547Dd2a38E4C792e764b048326d4951365",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x946e86495BC2F2e9E963f16e7C480Bd1527fF5fD",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x94bf625A16e696cBb6aC776d498435782b37AF88",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x9796978964bCa062af576156F280b97335464dBb",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x9845e94E60b919Caf8dBF79Fde451B1416feeF7C",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x98649049E84c9949176C1379fb92563DA95bCB0E",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x9BE3B91728EC2d56649330E19664Cf4d448E89E3",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0x9BE9F7B22a11706e6774E9e131077c10Dfd13841",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xA3268eDfd84415472D9c30eCdEBa487f865Ee063",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xa6E0Fe16814063Fde8bD7db6a50DA29EF7fe11bE",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xa7Aa9DeB6b993C6d8ea46bC32f58dE6C02A99D8d",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xA7Aaa6327c287d3BC4C5Ac53b6aE1584bb1124c0",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xA9109d52865De3f8Ec3a67C6ba54B2822ecC92E9",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xA961a3fa80A90B97daFdeeb65169B1AfB6AeFe7b",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xa9C27CddDd2eB20A1968B91Ea0086F48254e6916",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xAaa0840d1A32AB9cfdF700d67B3A595e844BB8CE",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xaAE2040f30725E3BA320dc4dE4a11e5979f21f13",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xAb50D5382864CeE06a764Cb5Ef4909fb37772423",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xb2953780EAbf9B8E99CbC293D8Ed5d9b017214D0",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xB4733F96e74767f6251dE7182532a40EC0AD950a",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xb4D83f07c02C855b058CC1E9d242e257E7c4ecDa",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xb74af825f5639192c4f06A4597b86F4a8F191a2E",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xb87e9e1918D7EF648F7e81cDD355491E10A6A101",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xB8892E03D7c1A83cfC60358F9f000BaC14265523",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xbB01461382f1B8bf968Ad79cC02A520Eb9d206f8",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xbC928d2463F730d2efc05Bebc323BC39770cF828",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xbca34271A5613903F7c575123d38BDd51F18dBfa",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xBf554fDbAa36c428a921CaF16Ab124762A9E559D",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xBF74F13652EA95dF6B3dD1cdbeBeE6E985278875",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xc1f2f90BCD7CDdDD10aF15d8C3dC6B943C1DD2D8",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xc2d8FF3cf7EbB5E0575202e65355168560707967",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xc36AC79eA1f51b817845cA7617a1613543ECb35c",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xC842dF6Bc2aa7f622Ec8D4a43CE89CBe464d51f5",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xC8a785ef405ae54710885550C1E18bEe9102Fe1F",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xcB6ABF5e44D4e9C9fb9BF89D50DF32A8C801cF0b",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xCBD1CB6377F079Fe79d7AA4E6F5F0859735BF281",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xd0952EE7B529124a6d316dE83372335B7556b9A7",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xD297b259Ca843FF5167B51e030D590Ff70D56E64",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xd34243E2BAcCF5C12e5485315bd277127C255F03",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xD57e9FAAeb48acd002f99C876A960BC46A6cff42",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xd60132E3F0B7f3DFFbFB1ca5a85b4A04C7328A19",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xD6F72906D068f5230331E830AC6E5F5B8425EcE2",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xda485b890e6C44e3B5da7Df953CB0f5B4fe5A743",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xDc6eb897305c836122D5E1077Ac2864FC9485feE",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xE3E0863382Fe0C431D1Df3b65f881dAB49A883e3",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xE5045EB1F54FeEd2Bce9b5D1268967861C640c17",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xeB93Df5F81d489C2054c9B9ef77706fFCAD9b6Cb",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xeC547F974B50aAA834DaE24d1b13eC5c1097bEd3",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xeCECb52791854b3A34dD590Cc7DAF7b2E7c00F25",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xed3E6dA56bE761a36329c9C700B6ADBC018062Fa",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xED902E2F3e6f84dEd01D46a618f4863CF0Ad4376",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xeE43a83d9660b7b05c2A1688f530D53C72BFAa0D",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xEF7C0Eb864708070abB2B5EfC7163fc80A63B4ad",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xf043dF587FC106cc9D71B56ec4a7b95fECeB618D",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xf44154B763C6aB4B10adE4A3Ba7BcFC6fa8d591A",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xF6D64A23ce944B56EdB2Cb582d3715f88b1308b2",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xFa43a34F53C31B15175906101D9C34e0149F73D4",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xFAe8A835169A8eB54eD9B7556cEae30C79eEe486",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xFC85a441009D914eD6798e47Dd224C3d6F90DFEd",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xFD1dF59F5dC242701A85Bd013C5295768bE819A6",
+    "vote": 1,
+    "vote_weight": 1000
+  },
+  {
+    "voter": "0xfe05A8F3d67fBBA35709a91F503ad2827dc16843",
+    "vote": 1,
+    "vote_weight": 1000
+  }
+]

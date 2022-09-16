@@ -1,4 +1,5 @@
 import os
+import json
 
 def asList(string:str)->list[str]:
   forbidden = ["\t","\n","(",")","'"]
@@ -24,3 +25,8 @@ for r in gg:
 print("vote history:", votes)
 print(f"Votes yes: {yes_votes} ({yes_votes/(yes_votes+no_votes)*100}%)")
 print(f"Votes no: {no_votes} ({no_votes/(yes_votes+no_votes)*100}%)")
+
+with open("votes/voteresult.json","w") as f:
+  f.write(json.dumps(votes))
+with open("votes/voteresult.txt","w") as f:
+  f.write(f"Votes yes: {yes_votes} ({yes_votes/(yes_votes+no_votes)*100}%) \n Votes no: {no_votes} ({no_votes/(yes_votes+no_votes)*100}%)")
