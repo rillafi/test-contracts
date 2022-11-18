@@ -6,7 +6,8 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",
     "@types/lodash": "^4.14.184",
-    "hardhat": "^2.10.2"
+    "hardhat": "^2.10.2",
+    "ts-node": "^10.9.1"
   },
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.1.1",
@@ -16,6 +17,9 @@
     "@openzeppelin/contracts": "^4.7.3",
     "dotenv": "^16.0.1",
     "hardhat-change-network": "^0.0.7",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "wagmi": "^0.6.4"
   }
 }
